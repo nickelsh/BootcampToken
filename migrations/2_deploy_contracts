@@ -1,0 +1,5 @@
+const NewPcToken = artifacts.require("NewPcToken");
+
+module.exports = function(deployer) {
+  deployer.deploy(NewPcToken);
+};

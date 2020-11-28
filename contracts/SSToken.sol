@@ -1,12 +1,12 @@
 pragma solidity ^0.5.8;
 
 //Change the contract name to your token name
-contract BootcampToken {
+contract SSToken {
     // Name your custom token
-    string public constant name = "BootcampToken";
+    string public constant name = "SSToken";
 
     // Name your custom token symbol
-    string public constant symbol = "BT";
+    string public constant symbol = "SST";
 
     uint8 public constant decimals = 18;
     
@@ -28,7 +28,7 @@ contract BootcampToken {
         owner = msg.sender;
 
         // Add your wallet address here which will contain your total token supply
-        treasury = address(0x99F147578Bfc3F59363408b7bDe09f4cc025097c);
+        treasury = address(0x8dcA8f6423395F1d5dfF2266bE3E41095AB020e2);
 
         // Set your total token supply (default 1000)
         totalSupply = 20000000 * 10**uint(decimals);
@@ -36,7 +36,6 @@ contract BootcampToken {
     
         balances[treasury] = totalSupply; //Updates
         emit Transfer(address(0), treasury, totalSupply);
-        
     }
 
     function () external payable {

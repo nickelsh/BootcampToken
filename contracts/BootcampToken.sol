@@ -13,7 +13,7 @@ contract BootcampToken {
     // Contract owner will be your Link account
     address public owner;
 
-    address public treasury;
+    address public treasury; 
 
     uint256 public totalSupply;
 
@@ -28,7 +28,7 @@ contract BootcampToken {
         owner = msg.sender;
 
         // Add your wallet address here which will contain your total token supply
-        treasury = address(0x99F147578Bfc3F59363408b7bDe09f4cc025097c);
+        treasury = address(0xD9497d82Ff898497EcD3BF38f6Fe549E1316DBDf);
 
         // Set your total token supply (default 1000)
         totalSupply = 20000000 * 10**uint(decimals);

@@ -70,7 +70,7 @@ module.exports = {
         // timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
         // skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
 
-       provider: () => new HDWalletProvider("vacant notable dose treat enter when soap student flash bus capital indoor", "https://ropsten.infura.io/v3/6f438453de9541558b44b1899347606e"),
+       provider: () => new HDWalletProvider("<Insert your wallet mnemonic here>", "<Insert your Infura link here>"),
        network_id: 3,
        gas: 5000000,
        gasPrice: 10
@@ -78,7 +78,7 @@ module.exports = {
   
      kovan: {
     provider: function() { 
-    return new HDWalletProvider("vacant notable dose treat enter when soap student flash bus capital indoor", "https://kovan.infura.io/v3/3c0b69fddada4555b33fa2e74e633bad");
+    return new HDWalletProvider("<Insert your wallet mnemonic here>", "<Insert your Infura link here>");
     },
    network_id: 42,
    gas: 5000000,

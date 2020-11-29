@@ -1,5 +1,5 @@
-const SSToken = artifacts.require("SSToken");
+const BootcampToken = artifacts.require("BootcampToken");
 
 module.exports = function(deployer) {
-  deployer.deploy(SSToken);
+  deployer.deploy(BootcampToken);
 };
